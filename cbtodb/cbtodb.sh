@@ -3,7 +3,7 @@
 # a sqlite database table
 
 TABLE_NAME="tmp$(date +%Y%m%d%H%M%S)"
-SQLITE_DB_FILE_LOCATION="cbtodb.db"
+SQLITE_DB_FILE_LOCATION="$( dirname "${BASH_SOURCE[0]}" )/cbtodb.db"
 TSV_FILE_LOCATION="/tmp/cbtodb_data_${TABLE_NAME}.tsv"
 
 if [ ! -f "$SQLITE_DB_FILE_LOCATION" ]; then
