@@ -31,7 +31,7 @@ def prListHead(data, nrows):
 
 # gets name and data for a set, splits it, prints top of it, then returns a sorted, unique list of the elements
 def getSet():
-    n = raw_input("Copy set to the clipboard and tell me the name: ")
+    n = input("Copy set to the clipboard and tell me the name: ")
     if n.lower() == 'q':
         quit()
     d = getClipboardData()

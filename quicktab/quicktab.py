@@ -41,7 +41,7 @@ def formatTab(l):
 
 # sequence of events
 def process():
-    raw_input("Copy data to clipboard then press <Enter>")
+    input("Copy data to clipboard then press <Enter>")
     a = splitData(getClipboardData(), '\r|\n')
     prListHead(a, 10)
     t = formatTab(freqTab(a))
@@ -55,7 +55,7 @@ def process():
 # function to check whether we want to continue
 def carryOn():
     while True:
-        choice  = raw_input("Ready for another? y/n: ").upper()
+        choice  = input("Ready for another? y/n: ").upper()
         if choice not in ('Y', 'N'):
             print("Invalid entry, y or n please")
         if choice == 'Y':
